@@ -60,7 +60,7 @@ const STEPS = [
   {
     icon: Paintbrush,
     title: 'Pick your style',
-    desc: '94 styles across 20 categories. CEO, Vogue, Dating, and beyond.',
+    desc: '149 styles across 20 categories. CEO, Vogue, Dating, and beyond.',
   },
   {
     icon: Download,
@@ -72,7 +72,7 @@ const STEPS = [
 const FAQS = [
   {
     q: 'How does VibeShift work?',
-    a: 'Upload any clear photo, choose from 94 AI styles, and get your transformation in under 30 seconds. The AI analyzes your features and creates a new image that still looks like you, just in a completely different style.',
+    a: 'Upload any clear photo, choose from 149 AI styles, and get your transformation in under 30 seconds. The AI analyzes your features and creates a new image that still looks like you, just in a completely different style.',
   },
   {
     q: 'Will it still look like me?',
@@ -88,7 +88,7 @@ const FAQS = [
   },
   {
     q: 'How is this different from other AI photo apps?',
-    a: 'VibeShift is a native mobile app (not a slow website) with 94 curated styles across 20 categories. While most apps focus only on headshots, we cover everything from professional to creative, dating to fashion, travel to streetwear.',
+    a: 'VibeShift is a native mobile app (not a slow website) with 149 curated styles across 20 categories. While most apps focus only on headshots, we cover everything from professional to creative, dating to fashion, travel to streetwear.',
   },
   {
     q: 'What if I don\'t like a result?',
@@ -524,7 +524,7 @@ export default function Home() {
               <motion.div variants={fadeUp} custom={0}>
                 <div className="inline-flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-full px-4 py-1.5 text-sm text-white/60 mb-6 md:mb-8">
                   <Sparkles className="w-3.5 h-3.5 text-fuchsia-400" aria-hidden="true" />
-                  94 AI styles available now
+                  149 AI styles available now
                 </div>
               </motion.div>
 
@@ -545,7 +545,7 @@ export default function Home() {
                 className="text-lg md:text-xl text-white/45 max-w-lg mx-auto lg:mx-0 mb-8 md:mb-10 leading-relaxed"
               >
                 Upload one photo and transform it into studio-quality portraits
-                across 94 styles. In seconds, not days.
+                across 149 styles. In seconds, not days.
               </motion.p>
 
               {/* CTA */}
@@ -578,7 +578,7 @@ export default function Home() {
                 className="flex items-center gap-6 md:gap-8 mt-10 md:mt-12 justify-center lg:justify-start"
               >
                 {[
-                  { value: '94', label: 'Styles' },
+                  { value: '149', label: 'Styles' },
                   { value: '20', label: 'Categories' },
                   { value: '<30s', label: 'Per photo' },
                 ].map((stat, i) => (
@@ -812,7 +812,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingX />
-                  <span className="text-white/30">All 94 styles</span>
+                  <span className="text-white/30">All 149 styles</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingX />
@@ -858,7 +858,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span><strong className="text-white">All 94 styles</strong></span>
+                  <span><strong className="text-white">All 149 styles</strong></span>
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
@@ -900,7 +900,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span><strong className="text-white/70">All 94 styles</strong></span>
+                  <span><strong className="text-white/70">All 149 styles</strong></span>
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
