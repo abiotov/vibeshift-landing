@@ -1,16 +1,21 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Terms() {
+  useEffect(() => {
+    document.title = 'Terms of Service - VibeShift'
+  }, [])
+
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans">
+    <div className="min-h-screen bg-[#0A0A0F] text-white font-sans">
       {/* Nav */}
-      <nav className="border-b border-white/5">
+      <nav className="border-b border-white/[0.06]">
         <div className="max-w-4xl mx-auto flex items-center justify-between px-6 py-4">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-fuchsia-500 to-pink-500 flex items-center justify-center font-black text-sm">V</div>
+            <img src="/logo.png" alt="VibeShift logo" className="w-8 h-8 rounded-lg" />
             <span className="font-bold">VibeShift</span>
           </Link>
-          <Link to="/" className="text-sm text-white/50 hover:text-white transition-colors">&larr; Back to home</Link>
+          <Link to="/" className="text-sm text-white/50 hover:text-white transition-[color] duration-200">&larr; Back to home</Link>
         </div>
       </nav>
 
@@ -125,11 +130,11 @@ export default function Terms() {
         </div>
       </main>
 
-      <footer className="border-t border-white/5 py-8">
+      <footer className="border-t border-white/[0.05] py-8">
         <div className="max-w-4xl mx-auto px-6 flex items-center justify-between text-sm text-white/30">
           <span>&copy; {new Date().getFullYear()} VibeShift</span>
           <div className="flex gap-4">
-            <Link to="/privacy" className="hover:text-white/50 transition-colors">Privacy</Link>
+            <Link to="/privacy" className="hover:text-white/50 transition-[color] duration-200">Privacy</Link>
             <Link to="/terms" className="text-white/50">Terms</Link>
           </div>
         </div>
