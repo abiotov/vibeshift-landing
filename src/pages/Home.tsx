@@ -524,7 +524,7 @@ export default function Home() {
               <motion.div variants={fadeUp} custom={0}>
                 <div className="inline-flex items-center gap-2 bg-white/[0.04] border border-white/[0.08] rounded-full px-4 py-1.5 text-sm text-white/60 mb-6 md:mb-8">
                   <Sparkles className="w-3.5 h-3.5 text-fuchsia-400" aria-hidden="true" />
-                  Powered by Google Gemini AI
+                  94 AI styles available now
                 </div>
               </motion.div>
 
