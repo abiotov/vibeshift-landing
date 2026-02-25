@@ -17,9 +17,9 @@ import {
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
-const CLOUD = 'https://res.cloudinary.com/dr7ohwmo2/image/upload'
-const thumb = (id: string) => `${CLOUD}/c_fill,w_300,h_400,q_auto,f_auto/${id}`
-const hero = (id: string) => `${CLOUD}/c_fill,w_600,h_800,q_auto,f_auto/${id}`
+const SB = 'https://supabase.tryvibeshift.com/storage/v1/object/public/style-previews'
+const styleImg = (styleId: string) => `${SB}/after/${styleId}.jpg`
+const beforeImg = (modelId: string) => `${SB}/before/${modelId}.jpg`
 
 const PLAY_STORE =
   'https://play.google.com/store/apps/details?id=com.vibeshift.app'
@@ -30,25 +30,25 @@ const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94]
 // Data
 // ---------------------------------------------------------------------------
 const BEFORE_AFTER_PAIRS = [
-  { name: 'CEO Portrait', before: 'feaztyz1gpfauovkhwz3', after: 'kehl0id3hmpa2pbqnmee' },
-  { name: 'Vogue Editorial', before: 'jybbzluhzkebvxpkbmvw', after: 'vf3gmk5jrtrlqevpu8qb' },
-  { name: 'Cinematic', before: 'rqd8ahswbzov1miftcmy', after: 'snkqe1yhf6cht5jflq6i' },
-  { name: 'Dating Profile', before: 'vhgrftbvyzgmm0rkueuk', after: 'z1vgwoynkhjsxiu5ijcc' },
+  { name: 'CEO Portrait', before: beforeImg('homme_blanc'), after: styleImg('ceo-headshots') },
+  { name: 'Vogue Editorial', before: beforeImg('femme_noire'), after: styleImg('vogue') },
+  { name: 'Cinematic', before: beforeImg('homme_asiatique'), after: styleImg('cinematic-portrait') },
+  { name: 'Dating Profile', before: beforeImg('femme_arabe'), after: styleImg('dating') },
 ]
 
-const BENTO_ITEMS: { id: string; name: string; size: 'lg' | 'sm' }[] = [
-  { id: 'kehl0id3hmpa2pbqnmee', name: 'CEO', size: 'lg' },
-  { id: 'vf3gmk5jrtrlqevpu8qb', name: 'Vogue', size: 'sm' },
-  { id: 'krccy8jydi2ahsfz3oym', name: 'Dark Academia', size: 'sm' },
-  { id: 'snkqe1yhf6cht5jflq6i', name: 'Cinematic', size: 'lg' },
-  { id: 'w3dpqhvmwytkjrknkk6q', name: 'Instagram', size: 'sm' },
-  { id: 'he0ptbrvxajnuyrpmva1', name: 'Clean Girl', size: 'sm' },
-  { id: 'ing73hb4owbuykkrrwdb', name: 'Founder', size: 'lg' },
-  { id: 'z1vgwoynkhjsxiu5ijcc', name: 'Dating', size: 'sm' },
-  { id: 'fxinnh2mudsuaabt5wln', name: 'Streetwear', size: 'sm' },
-  { id: 'nwjan5smalf1nm1jplbu', name: 'Luxury', size: 'lg' },
-  { id: 'fadgz7bpl9ehco7tvhll', name: 'Soft', size: 'sm' },
-  { id: 'pxizwflcwod6wyvxxq1b', name: 'Professional', size: 'sm' },
+const BENTO_ITEMS: { id: string; name: string; size: 'lg' | 'sm'; image: string }[] = [
+  { id: 'ceo-headshots', name: 'CEO', size: 'lg', image: styleImg('ceo-headshots') },
+  { id: 'vogue', name: 'Vogue', size: 'sm', image: styleImg('vogue') },
+  { id: 'dark-academia', name: 'Dark Academia', size: 'sm', image: styleImg('dark-academia') },
+  { id: 'cinematic-portrait', name: 'Cinematic', size: 'lg', image: styleImg('cinematic-portrait') },
+  { id: 'instagram-worthy', name: 'Instagram', size: 'sm', image: styleImg('instagram-worthy') },
+  { id: 'clean-girl', name: 'Clean Girl', size: 'sm', image: styleImg('clean-girl') },
+  { id: 'startup-founder', name: 'Founder', size: 'lg', image: styleImg('startup-founder') },
+  { id: 'dating', name: 'Dating', size: 'sm', image: styleImg('dating') },
+  { id: 'streetwear-cool', name: 'Streetwear', size: 'sm', image: styleImg('streetwear-cool') },
+  { id: 'luxury-lifestyle', name: 'Luxury', size: 'lg', image: styleImg('luxury-lifestyle') },
+  { id: 'soft-aesthetic', name: 'Soft', size: 'sm', image: styleImg('soft-aesthetic') },
+  { id: 'professional-photos', name: 'Professional', size: 'sm', image: styleImg('professional-photos') },
 ]
 
 const STEPS = [
@@ -145,13 +145,13 @@ function useScrolled() {
 // Before/After Slider Component
 // ---------------------------------------------------------------------------
 function BeforeAfterSlider({
-  beforeId,
-  afterId,
+  beforeSrc,
+  afterSrc,
   styleName,
   priority = false,
 }: {
-  beforeId: string
-  afterId: string
+  beforeSrc: string
+  afterSrc: string
   styleName: string
   priority?: boolean
 }) {
@@ -204,7 +204,7 @@ function BeforeAfterSlider({
     >
       {/* After image (full) */}
       <img
-        src={hero(afterId)}
+        src={afterSrc}
         alt={`${styleName} style transformation result`}
         className="absolute inset-0 w-full h-full object-cover"
         loading={priority ? 'eager' : 'lazy'}
@@ -216,7 +216,7 @@ function BeforeAfterSlider({
         style={{ width: `${sliderPos}%` }}
       >
         <img
-          src={hero(beforeId)}
+          src={beforeSrc}
           alt={`Original photo before ${styleName} transformation`}
           className="absolute inset-0 w-full h-full object-cover"
           style={{ width: containerRef.current?.offsetWidth || '100%' }}
@@ -606,8 +606,8 @@ export default function Home() {
             >
               <div className="relative rounded-2xl overflow-hidden glow-pink">
                 <BeforeAfterSlider
-                  beforeId="feaztyz1gpfauovkhwz3"
-                  afterId="kehl0id3hmpa2pbqnmee"
+                  beforeSrc={beforeImg('homme_blanc')}
+                  afterSrc={styleImg('ceo-headshots')}
                   styleName="CEO Portrait"
                   priority
                 />
@@ -660,7 +660,7 @@ export default function Home() {
                 }`}
               >
                 <img
-                  src={item.size === 'lg' ? hero(item.id) : thumb(item.id)}
+                  src={item.image}
                   alt={`${item.name} style AI portrait example`}
                   className="w-full h-full object-cover transition-[transform] duration-700 group-hover:scale-105"
                   loading="lazy"
@@ -754,8 +754,8 @@ export default function Home() {
                 className="glass rounded-2xl p-2 md:p-3"
               >
                 <BeforeAfterSlider
-                  beforeId={pair.before}
-                  afterId={pair.after}
+                  beforeSrc={pair.before}
+                  afterSrc={pair.after}
                   styleName={pair.name}
                 />
               </motion.div>
