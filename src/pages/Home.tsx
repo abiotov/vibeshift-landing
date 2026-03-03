@@ -30,7 +30,7 @@ const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94]
 // Data
 // ---------------------------------------------------------------------------
 const BEFORE_AFTER_PAIRS = [
-  { name: 'CEO Portrait', before: beforeImg('homme_blanc'), after: styleImg('ceo-headshots') },
+  { name: 'CEO Portrait', before: beforeImg('femme_noire'), after: styleImg('ceo-headshots') },
   { name: 'Vogue Editorial', before: beforeImg('femme_noire'), after: styleImg('vogue') },
   { name: 'Cinematic', before: beforeImg('homme_asiatique'), after: styleImg('cinematic-portrait') },
   { name: 'Dating Profile', before: beforeImg('femme_arabe'), after: styleImg('dating') },
@@ -606,7 +606,7 @@ export default function Home() {
             >
               <div className="relative rounded-2xl overflow-hidden glow-pink">
                 <BeforeAfterSlider
-                  beforeSrc={beforeImg('homme_blanc')}
+                  beforeSrc={beforeImg('femme_noire')}
                   afterSrc={styleImg('ceo-headshots')}
                   styleName="CEO Portrait"
                   priority
