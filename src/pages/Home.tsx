@@ -439,7 +439,7 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
-    document.title = 'VibeShift - AI Photo Transformation'
+    document.title = 'VibeShift — AI Photo Transformation & Headshot Generator'
   }, [])
 
   return (
@@ -534,8 +534,8 @@ export default function Home() {
                 custom={1}
                 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] font-black leading-[1.05] tracking-tight mb-5 md:mb-6"
               >
-                Any selfie.{' '}
-                <span className="gradient-text">Any style.</span>
+                AI Photo Transformation.{' '}
+                <span className="gradient-text">Any Style.</span>
               </motion.h1>
 
               {/* Subheadline */}
@@ -637,7 +637,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Every vibe. One app.
+              149 AI Portrait Styles. One App.
             </h2>
             <p className="text-white/40 max-w-lg mx-auto text-base md:text-lg">
               From boardroom headshots to festival looks. Choose your aesthetic.
@@ -684,7 +684,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Three steps. That's it.
+              AI Photo Transformation in 3 Steps
             </h2>
             <p className="text-white/40 max-w-lg mx-auto text-base md:text-lg">
               No photoshoot. No editing skills. No waiting days for results.
@@ -733,7 +733,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              See the transformation
+              AI Before & After Transformations
             </h2>
             <p className="text-white/40 max-w-lg mx-auto text-base md:text-lg">
               Same person, completely different vibe. Still looks like you -- only the style changes.
@@ -779,7 +779,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-5 md:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Skip the photographer
+              AI Headshots. Skip the Photographer.
             </h2>
             <p className="text-white/40 max-w-lg mx-auto text-base md:text-lg">
               A professional photoshoot costs $200+. VibeShift starts free.
@@ -936,7 +936,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <div className="text-center mb-10 md:mb-14">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Questions? Answers.
+              AI Photo Transformation FAQ
             </h2>
           </div>
           <div className="glass rounded-2xl md:rounded-3xl px-5 md:px-8 py-2">
@@ -959,7 +959,7 @@ export default function Home() {
         <div className="relative max-w-3xl mx-auto px-5 md:px-8 text-center">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 leading-tight">
             Ready to{' '}
-            <span className="gradient-text">shift your vibe</span>?
+            <span className="gradient-text">transform your photos</span>?
           </h2>
           <p className="text-white/40 text-base md:text-lg mb-10 max-w-md mx-auto">
             Your next profile picture is one tap away. Start with 3 free generations.

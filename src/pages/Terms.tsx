@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 export default function Terms() {
   useEffect(() => {
-    document.title = 'Terms of Service - VibeShift'
+    document.title = 'Terms of Service - VibeShift AI Photo Transformation'
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'VibeShift Terms of Service. Usage rights for AI-generated photos, subscription details, and service guidelines for our photo transformation app.')
   }, [])
 
   return (

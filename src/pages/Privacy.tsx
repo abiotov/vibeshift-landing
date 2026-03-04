@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 
 export default function Privacy() {
   useEffect(() => {
-    document.title = 'Privacy Policy - VibeShift'
+    document.title = 'Privacy Policy - VibeShift AI Photo Transformation'
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'VibeShift Privacy Policy. Learn how we protect your photos and personal data. Your uploaded images are processed securely and never shared.')
   }, [])
 
   return (
