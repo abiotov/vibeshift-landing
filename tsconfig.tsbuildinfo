@@ -1,1 +1,1 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/pages/Home.tsx","./src/pages/Privacy.tsx","./src/pages/Terms.tsx"],"version":"5.7.3"}
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/pages/AiDatingPhotos.tsx","./src/pages/AiHeadshotGenerator.tsx","./src/pages/AiPhotoStyles.tsx","./src/pages/AlternativeAragon.tsx","./src/pages/Home.tsx","./src/pages/Privacy.tsx","./src/pages/Terms.tsx"],"version":"5.7.3"}
