@@ -56,7 +56,7 @@ export default function Privacy() {
               <li>Original uploads are deleted after processing is complete</li>
               <li>Generated (transformed) images are stored in your private account</li>
               <li>You can delete any generated image at any time</li>
-              <li>Photos are hosted on Cloudinary with industry-standard encryption</li>
+              <li>Photos are hosted on secure, encrypted servers with restricted access</li>
             </ul>
           </section>
 
@@ -66,9 +66,8 @@ export default function Privacy() {
             <ul className="list-disc list-inside mt-2 space-y-1 ml-4">
               <li><strong className="text-white">Google Sign-In</strong> - Authentication</li>
               <li><strong className="text-white">Google Play Billing</strong> - Payment processing (we never store your card details)</li>
-              <li><strong className="text-white">Google AI (Gemini)</strong> - Photo generation</li>
-              <li><strong className="text-white">Supabase</strong> - Secure database storage</li>
-              <li><strong className="text-white">Cloudinary</strong> - Image hosting</li>
+              <li><strong className="text-white">AI Processing</strong> - Photo generation (processed securely, not stored by the AI provider)</li>
+              <li><strong className="text-white">Secure Cloud Database</strong> - Account and image storage</li>
             </ul>
             <p className="mt-3">Each service has its own privacy policy. We encourage you to review them.</p>
           </section>
@@ -78,8 +77,8 @@ export default function Privacy() {
             <p>We protect your data with:</p>
             <ul className="list-disc list-inside mt-2 space-y-1 ml-4">
               <li>HTTPS encryption for all data transfers</li>
-              <li>Row-Level Security (RLS) on our database</li>
-              <li>JWT-based authentication for API access</li>
+              <li>Database-level access controls so only you can see your data</li>
+              <li>Secure token-based authentication</li>
               <li>Regular security audits</li>
             </ul>
           </section>
