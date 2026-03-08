@@ -694,7 +694,7 @@ export default function AiHeadshotGenerator() {
                   <div className="w-5 h-5 rounded-full bg-fuchsia-500/15 text-fuchsia-400 flex items-center justify-center shrink-0 mt-0.5">
                     <DollarSign className="w-3 h-3" />
                   </div>
-                  <span>Up to 50 generations per week</span>
+                  <span>Up to 20 generations per week</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-fuchsia-500/15 text-fuchsia-400 flex items-center justify-center shrink-0 mt-0.5">

@@ -396,7 +396,7 @@ function MobileMenu({
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-fuchsia-500 to-pink-500 font-semibold py-3.5 rounded-xl cta-glow transition-[opacity,transform] duration-200 hover:scale-[1.02]"
               >
-                Download Free
+                Start Free Trial
               </a>
             </div>
           </motion.div>
@@ -560,7 +560,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-2xl cta-glow transition-[opacity,transform] duration-200 hover:scale-[1.03] active:scale-[0.98]"
                 >
-                  Try Free - 3 Days
+                  Start Free Trial
                 </a>
                 <a
                   href="#styles"
@@ -782,79 +782,37 @@ export default function Home() {
               AI Headshots. Skip the Photographer.
             </h2>
             <p className="text-white/40 max-w-lg mx-auto text-base md:text-lg">
-              A professional photoshoot costs $200+. VibeShift starts free.
+              A professional photoshoot costs $200+. VibeShift starts at $1.35/week.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-4 md:gap-5 max-w-5xl mx-auto">
-            {/* FREE */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeUp}
-              custom={0}
-              className="glass rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col"
-            >
-              <div className="text-white/40 text-sm font-medium uppercase tracking-wider mb-4">
-                Free
-              </div>
-              <div className="text-3xl md:text-4xl font-bold mb-1">$0</div>
-              <div className="text-sm text-white/30 mb-6">Forever</div>
-              <ul className="space-y-3 text-sm text-white/50 mb-8 flex-1">
-                <li className="flex items-start gap-3">
-                  <PricingCheck muted />
-                  <span>3 generations</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <PricingCheck muted />
-                  <span>Basic styles</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <PricingX />
-                  <span className="text-white/30">All 149 styles</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <PricingX />
-                  <span className="text-white/30">2K quality</span>
-                </li>
-              </ul>
-              <a
-                href={PLAY_STORE}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full flex items-center justify-center py-3 rounded-xl bg-white/[0.06] hover:bg-white/[0.1] border border-white/[0.06] font-medium text-sm transition-[background-color] duration-200"
-              >
-                Get Started
-              </a>
-            </motion.div>
-
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
             {/* ANNUAL - BEST VALUE */}
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              custom={1}
+              custom={0}
               className="relative glass rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col glow-border md:scale-[1.02]"
             >
               <div className="absolute -top-3 left-6 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide">
-                Best Value -- Save 86%
+                Best Value -- Save 83%
               </div>
               <div className="gradient-text text-sm font-medium uppercase tracking-wider mb-4">
                 Annual
               </div>
               <div className="flex items-baseline gap-2 mb-1">
-                <span className="text-3xl md:text-4xl font-bold">$59.99</span>
+                <span className="text-3xl md:text-4xl font-bold">$69.99</span>
                 <span className="text-sm text-white/30">/year</span>
               </div>
               <div className="text-sm text-fuchsia-400/70 mb-6">
-                Just $1.15/week
+                Just $1.35/week
               </div>
               <ul className="space-y-3 text-sm mb-8 flex-1">
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span>50 generations/week</span>
+                  <span>15 generations/week</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
@@ -862,7 +820,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span>2K quality output</span>
+                  <span>Pro 2K quality output</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
@@ -885,9 +843,12 @@ export default function Home() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              custom={2}
-              className="glass rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col"
+              custom={1}
+              className="relative glass rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col"
             >
+              <div className="absolute -top-3 left-6 bg-white/10 backdrop-blur-sm text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide text-white/80">
+                Premium
+              </div>
               <div className="text-white/40 text-sm font-medium uppercase tracking-wider mb-4">
                 Weekly
               </div>
@@ -896,7 +857,7 @@ export default function Home() {
               <ul className="space-y-3 text-sm text-white/50 mb-8 flex-1">
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span>50 generations/week</span>
+                  <span>20 generations/week</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
@@ -904,7 +865,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span>2K quality output</span>
+                  <span>Pro 4K quality output</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
@@ -962,7 +923,7 @@ export default function Home() {
             <span className="gradient-text">transform your photos</span>?
           </h2>
           <p className="text-white/40 text-base md:text-lg mb-10 max-w-md mx-auto">
-            Your next profile picture is one tap away. Start with 3 free generations.
+            Your next profile picture is one tap away. Try free for 3 days.
           </p>
           <a
             href={PLAY_STORE}
@@ -970,7 +931,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white font-semibold text-lg px-10 py-5 rounded-2xl cta-glow transition-[opacity,transform] duration-200 hover:scale-[1.03] active:scale-[0.98]"
           >
-            Download Free
+            Start Free Trial
           </a>
           <p className="text-sm text-white/25 mt-6">
             Available on Android. iOS coming soon.

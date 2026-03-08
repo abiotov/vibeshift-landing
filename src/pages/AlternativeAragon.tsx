@@ -71,7 +71,7 @@ const SWITCH_REASONS = [
   {
     icon: DollarSign,
     title: 'More affordable at every level',
-    desc: 'Start free with 3 generations. Upgrade to weekly ($7.99/week) or annual ($59.99/year) for unlimited access to all 149 styles with a 3-day free trial. Aragon charges $29/month with no free tier.',
+    desc: 'Start with a 3-day free trial. Choose weekly ($7.99/week) or annual ($69.99/year) for access to all 149 styles. Aragon charges $29/month with no free trial.',
   },
   {
     icon: Zap,
@@ -83,11 +83,11 @@ const SWITCH_REASONS = [
 const FAQS = [
   {
     q: 'What makes VibeShift better than Aragon AI?',
-    a: 'VibeShift offers 149 AI styles (vs ~20 for Aragon), generates photos in 30 seconds (vs minutes), costs less ($7.99/week or $59.99/year vs $29/month), and includes a free tier with 3 generations. VibeShift also covers far more use cases beyond headshots -- dating, social media, creative, fashion, and more.',
+    a: 'VibeShift offers 149 AI styles (vs ~20 for Aragon), generates photos in 30 seconds (vs minutes), costs less ($7.99/week or $69.99/year vs $29/month), and includes a 3-day free trial. VibeShift also covers far more use cases beyond headshots -- dating, social media, creative, fashion, and more.',
   },
   {
     q: 'Can I migrate from Aragon AI to VibeShift?',
-    a: 'There is nothing to migrate. Simply download VibeShift from the Play Store, upload a selfie, and start generating. Your first 3 generations are free, no credit card required.',
+    a: 'There is nothing to migrate. Simply download VibeShift from the Play Store, start your 3-day free trial, upload a selfie, and start generating.',
   },
   {
     q: 'Does VibeShift work on iOS?',
@@ -605,7 +605,7 @@ export default function AlternativeAragon() {
             <span className="gradient-text">the better alternative</span>?
           </h2>
           <p className="text-white/40 text-base md:text-lg mb-10 max-w-md mx-auto">
-            149 styles, 30-second generation, and a free tier. No credit card required to get started.
+            149 styles, 30-second generation, and a 3-day free trial to get started.
           </p>
           <a
             href={PLAY_STORE}
