@@ -58,7 +58,7 @@ const COMPARISON_ROWS = [
   { feature: 'Price', vibeshift: 'Free + $7.99/week', aragon: '$29/month', advantage: true },
   { feature: 'Generation Speed', vibeshift: '30 seconds', aragon: 'Minutes', advantage: true },
   { feature: 'Platform', vibeshift: 'Android (iOS soon)', aragon: 'Web', advantage: false },
-  { feature: 'Free Trial', vibeshift: 'Yes (3 days)', aragon: 'No', advantage: true },
+  { feature: 'Cancel anytime', vibeshift: 'Yes', aragon: 'Yes', advantage: false },
   { feature: 'Style Categories', vibeshift: '20', aragon: 'Limited', advantage: true },
 ]
 
@@ -71,7 +71,7 @@ const SWITCH_REASONS = [
   {
     icon: DollarSign,
     title: 'More affordable at every level',
-    desc: 'Start with a 3-day free trial. Choose weekly ($7.99/week) or annual ($69.99/year) for access to all 149 styles. Aragon charges $29/month with no free trial.',
+    desc: 'Choose weekly ($7.99/week) or annual ($69.99/year) for access to all 149 styles. Cancel anytime. Aragon charges $29/month.',
   },
   {
     icon: Zap,
@@ -83,11 +83,11 @@ const SWITCH_REASONS = [
 const FAQS = [
   {
     q: 'What makes VibeShift better than Aragon AI?',
-    a: 'VibeShift offers 149 AI styles (vs ~20 for Aragon), generates photos in 30 seconds (vs minutes), costs less ($7.99/week or $69.99/year vs $29/month), and includes a 3-day free trial. VibeShift also covers far more use cases beyond headshots -- dating, social media, creative, fashion, and more.',
+    a: 'VibeShift offers 149 AI styles (vs ~20 for Aragon), generates photos in 30 seconds (vs minutes), and costs less ($7.99/week or $69.99/year vs $29/month). VibeShift also covers far more use cases beyond headshots -- dating, social media, creative, fashion, and more.',
   },
   {
     q: 'Can I migrate from Aragon AI to VibeShift?',
-    a: 'There is nothing to migrate. Simply download VibeShift from the Play Store, start your 3-day free trial, upload a selfie, and start generating.',
+    a: 'There is nothing to migrate. Simply download VibeShift from the Play Store, upload a selfie, and start generating.',
   },
   {
     q: 'Does VibeShift work on iOS?',
@@ -605,7 +605,7 @@ export default function AlternativeAragon() {
             <span className="gradient-text">the better alternative</span>?
           </h2>
           <p className="text-white/40 text-base md:text-lg mb-10 max-w-md mx-auto">
-            149 styles, 30-second generation, and a 3-day free trial to get started.
+            149 styles, 30-second generation, and affordable pricing to get started.
           </p>
           <a
             href={PLAY_STORE}

@@ -396,7 +396,7 @@ function MobileMenu({
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-fuchsia-500 to-pink-500 font-semibold py-3.5 rounded-xl cta-glow transition-[opacity,transform] duration-200 hover:scale-[1.02]"
               >
-                Start Free Trial
+                Download App
               </a>
             </div>
           </motion.div>
@@ -560,7 +560,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-2xl cta-glow transition-[opacity,transform] duration-200 hover:scale-[1.03] active:scale-[0.98]"
                 >
-                  Start Free Trial
+                  Download App
                 </a>
                 <a
                   href="#styles"
@@ -824,7 +824,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span>3-day free trial</span>
+                  <span>Cancel anytime</span>
                 </li>
               </ul>
               <a
@@ -833,7 +833,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center py-3.5 rounded-xl bg-gradient-to-r from-fuchsia-500 to-pink-500 font-semibold text-sm cta-glow transition-[opacity,transform] duration-200 hover:scale-[1.02]"
               >
-                Start Free Trial
+                Get Started
               </a>
             </motion.div>
 
@@ -869,7 +869,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <PricingCheck />
-                  <span>3-day free trial</span>
+                  <span>Cancel anytime</span>
                 </li>
               </ul>
               <a
@@ -878,13 +878,13 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center py-3 rounded-xl bg-white/[0.06] hover:bg-white/[0.1] border border-white/[0.06] font-medium text-sm transition-[background-color] duration-200"
               >
-                Start Free Trial
+                Get Started
               </a>
             </motion.div>
           </div>
 
           <p className="text-center text-xs text-white/25 mt-6 max-w-xl mx-auto">
-            Payment charged after 3-day free trial ends. Subscription auto-renews
+            Payment charged immediately. Subscription auto-renews
             unless cancelled at least 24 hours before the end of the current period.
           </p>
         </div>
@@ -923,7 +923,7 @@ export default function Home() {
             <span className="gradient-text">transform your photos</span>?
           </h2>
           <p className="text-white/40 text-base md:text-lg mb-10 max-w-md mx-auto">
-            Your next profile picture is one tap away. Try free for 3 days.
+            Your next profile picture is one tap away. Get started now.
           </p>
           <a
             href={PLAY_STORE}
@@ -931,7 +931,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white font-semibold text-lg px-10 py-5 rounded-2xl cta-glow transition-[opacity,transform] duration-200 hover:scale-[1.03] active:scale-[0.98]"
           >
-            Start Free Trial
+            Get Started
           </a>
           <p className="text-sm text-white/25 mt-6">
             Available on Android. iOS coming soon.
