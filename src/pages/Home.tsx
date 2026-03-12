@@ -782,7 +782,7 @@ export default function Home() {
               AI Headshots. Skip the Photographer.
             </h2>
             <p className="text-white/40 max-w-lg mx-auto text-base md:text-lg">
-              A professional photoshoot costs $200+. VibeShift starts at $1.35/week.
+              A professional photoshoot costs $200+. VibeShift starts at $2.88/week.
             </p>
           </div>
 
@@ -797,17 +797,17 @@ export default function Home() {
               className="relative glass rounded-2xl md:rounded-3xl p-6 md:p-8 flex flex-col glow-border md:scale-[1.02]"
             >
               <div className="absolute -top-3 left-6 bg-gradient-to-r from-fuchsia-500 to-pink-500 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide">
-                Best Value -- Save 83%
+                Best Value -- Save 71%
               </div>
               <div className="gradient-text text-sm font-medium uppercase tracking-wider mb-4">
                 Annual
               </div>
               <div className="flex items-baseline gap-2 mb-1">
-                <span className="text-3xl md:text-4xl font-bold">$69.99</span>
+                <span className="text-3xl md:text-4xl font-bold">$149.99</span>
                 <span className="text-sm text-white/30">/year</span>
               </div>
               <div className="text-sm text-fuchsia-400/70 mb-6">
-                Just $1.35/week
+                Just $2.88/week
               </div>
               <ul className="space-y-3 text-sm mb-8 flex-1">
                 <li className="flex items-start gap-3">
@@ -852,7 +852,7 @@ export default function Home() {
               <div className="text-white/40 text-sm font-medium uppercase tracking-wider mb-4">
                 Weekly
               </div>
-              <div className="text-3xl md:text-4xl font-bold mb-1">$7.99</div>
+              <div className="text-3xl md:text-4xl font-bold mb-1">$9.99</div>
               <div className="text-sm text-white/30 mb-6">/week</div>
               <ul className="space-y-3 text-sm text-white/50 mb-8 flex-1">
                 <li className="flex items-start gap-3">

@@ -55,7 +55,7 @@ const scaleIn: Variants = {
 // ---------------------------------------------------------------------------
 const COMPARISON_ROWS = [
   { feature: 'AI Photo Styles', vibeshift: '149', aragon: '~20', advantage: true },
-  { feature: 'Price', vibeshift: 'Free + $7.99/week', aragon: '$29/month', advantage: true },
+  { feature: 'Price', vibeshift: 'Free + $9.99/week', aragon: '$29/month', advantage: true },
   { feature: 'Generation Speed', vibeshift: '30 seconds', aragon: 'Minutes', advantage: true },
   { feature: 'Platform', vibeshift: 'Android (iOS soon)', aragon: 'Web', advantage: false },
   { feature: 'Cancel anytime', vibeshift: 'Yes', aragon: 'Yes', advantage: false },
@@ -71,7 +71,7 @@ const SWITCH_REASONS = [
   {
     icon: DollarSign,
     title: 'More affordable at every level',
-    desc: 'Choose weekly ($7.99/week) or annual ($69.99/year) for access to all 149 styles. Cancel anytime. Aragon charges $29/month.',
+    desc: 'Choose weekly ($9.99/week) or annual ($149.99/year) for access to all 149 styles. Cancel anytime. Aragon charges $29/month.',
   },
   {
     icon: Zap,
@@ -83,7 +83,7 @@ const SWITCH_REASONS = [
 const FAQS = [
   {
     q: 'What makes VibeShift better than Aragon AI?',
-    a: 'VibeShift offers 149 AI styles (vs ~20 for Aragon), generates photos in 30 seconds (vs minutes), and costs less ($7.99/week or $69.99/year vs $29/month). VibeShift also covers far more use cases beyond headshots -- dating, social media, creative, fashion, and more.',
+    a: 'VibeShift offers 149 AI styles (vs ~20 for Aragon), generates photos in 30 seconds (vs minutes), and costs less ($9.99/week or $149.99/year vs $29/month). VibeShift also covers far more use cases beyond headshots -- dating, social media, creative, fashion, and more.',
   },
   {
     q: 'Can I migrate from Aragon AI to VibeShift?',
